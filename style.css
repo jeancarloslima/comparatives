@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Cores */
+    --cor-primaria: #0466c8;
+    --branco: #fffcf2;
+    --preto: #252422;
+    /* Fontes */
+    --fonte-primaria: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+header {
+    margin: 3rem 1rem;
+}
+
+#titulo {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.explicacao {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.explicacao,
+.exercicios {
+    padding: 2rem;
+}
+
+.texto-explicacao {
+    text-align: justify;
+    line-height: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin: 2rem 0;
+}
+
+.regra {
+    margin-bottom: 4rem;
+}
+
+.negrito {
+    font-weight: 600;
+}
+
+.destaque {
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.exemplo-item {
+    margin: .75rem 0 .75rem 120px;
+}
+
+.exercicios {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+}
+
+
+#subtitulo-exercicios {
+    color: var(--branco);
+}
+
+.exercicios-container {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 7rem;
+}
+
+.exercicio {
+    padding: 1rem 0;
+}
+
+.lista-alternativas {
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.alternativa-item {
+    width: 300px;
+    padding: 1rem 0;
+    background-color: var(--branco);
+    border: 1px solid var(--branco);
+    border-radius: 16px;
+    color: var(--cor-primaria);
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.alternativa-item:hover,
+.alternativa-item.active {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    border-radius: 8px;
+}
+
+.alternativa-item.correta {
+    background-color: #b6e648;
+    color: var(--branco);
+}
+
+.alternativa-item.incorreta {
+    background-color: #ee5045;
+}
+
+.feedback {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.feedback.correta {
+    color: #b6e648;
+}
+
+.feedback.incorreta {
+    color: #ee5045;
+}
+
+.resultado-final {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
