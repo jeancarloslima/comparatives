@@ -125,7 +125,8 @@ h3 {
 }
 
 .alternativa-item.incorreta {
-    background-color: #ee5045;
+    background-color: #f0386b;
+    color: var(--branco);
 }
 
 .feedback {
@@ -138,7 +139,7 @@ h3 {
 }
 
 .feedback.incorreta {
-    color: #ee5045;
+    color: #ff5376;
 }
 
 .resultado-final {
